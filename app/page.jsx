@@ -10,10 +10,6 @@ const myFont = localFont({ src: "../public/fonts/Icekingdom.ttf" });
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title key='title'>Your papa</title>
-        {/* <script defer src="../public/vendor/Snow.js"></script> */}
-      </Head>
       <nav className=" absolute top-0 left-0 w-full z-50 px-5 md:px-12 lg:px-24 py-3 flex justify-between items-center">
         <img src="/frost.png" alt="" className=" w-16" />
         <div className=" flex items-center gap-x-3">
@@ -83,6 +79,77 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+      <section className=" px-5 py-16  md:px-12 lg:px-24 bg-lightBlue text-bgBlue">
+        <h2 className={` ${myFont.className}  text-5xl text-center relative `}>
+          How To buy
+        </h2>
+        <div className=" mt-8 flex flex-col md:flex-wrap  md:flex-row md:justify-between gap-y-5">
+          <div className=" w-full md:w-[47%]  hover:bg-gray-950 relative bg-bgBlue text-white px-5 py-10">
+            <p
+              className={` ${myFont.className} text-lightBlue absolute right-3 bottom-3 text-3xl font-bold`}
+            >
+              01
+            </p>
+            <h3
+              className={` ${myFont.className} uppercase text-lightBlue font-bold text-2xl`}
+            >
+              create a wallet{" "}
+            </h3>
+            <p className=" mt-2">
+              Sign up directly at uniswap and create your wallet, or import
+              abstract network into MetaMask/wallet of your choice
+            </p>
+          </div>
+          <div className=" w-full md:w-[47%]  hover:bg-gray-950 relative bg-bgBlue text-white px-5 py-10">
+            <p
+              className={` ${myFont.className} text-lightBlue absolute right-3 bottom-3 text-3xl font-bold`}
+            >
+              02
+            </p>
+            <h3
+              className={` ${myFont.className} uppercase text-lightBlue font-bold text-2xl`}
+            >
+              deposit some eth
+            </h3>
+            <p className=" mt-2">
+              Using a centralised exchange purchase your desired amount of ETH
+              and send it to your new wallet
+            </p>
+          </div>
+          <div className=" w-full md:w-[47%]  hover:bg-gray-950 relative bg-bgBlue text-white px-5 py-10">
+            <p
+              className={` ${myFont.className} text-lightBlue absolute right-3 bottom-3 text-3xl font-bold`}
+            >
+              03
+            </p>
+            <h3
+              className={` ${myFont.className} uppercase text-lightBlue font-bold text-2xl`}
+            >
+              BRIDGE TO ABSTRACT
+            </h3>
+            <p className=" mt-2">
+              Bridge your mainnet ETH to Abstract ETH . This is important as you
+              will need it to swap for $COOL{" "}
+            </p>
+          </div>
+          <div className=" w-full md:w-[47%]  hover:bg-gray-950 relative bg-bgBlue text-white px-5 py-10">
+            <p
+              className={` ${myFont.className} text-lightBlue absolute right-3 bottom-3 text-3xl font-bold`}
+            >
+              04
+            </p>
+            <h3
+              className={` ${myFont.className} uppercase text-lightBlue font-bold text-2xl`}
+            >
+              swap to $COOL
+            </h3>
+            <p className=" mt-2">
+            Using the abstract trade function at abs.xyz, You can now swap your abstract ETH for $COOL on the abstract dashboard
+            </p>
+          </div>
+
         </div>
       </section>
       <footer className=" bg-bgBlue py-20">

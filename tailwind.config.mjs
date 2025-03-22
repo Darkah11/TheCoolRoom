@@ -8,8 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        deepBlue: "#31578C",
+        bgBlue: "#112034",
+        lightBlue: "#7ACFE3",
       },
     },
   },

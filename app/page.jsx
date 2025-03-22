@@ -3,7 +3,6 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import bg from "../public/ice.jpg";
 import Link from "next/link";
-import SnowEffect from "@layankumarasinghe/react-snow-effect";
 import SnowStorm from "react-snowstorm";
 
 const myFont = localFont({ src: "../public/fonts/Icekingdom.ttf" });
